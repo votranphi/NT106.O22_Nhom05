@@ -63,6 +63,7 @@ namespace ClientForm
             // 
             this.richTextBox1.Location = new System.Drawing.Point(12, 71);
             this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(372, 118);
             this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "";
@@ -111,6 +112,7 @@ namespace ClientForm
             this.richTextBox2.Size = new System.Drawing.Size(372, 20);
             this.richTextBox2.TabIndex = 7;
             this.richTextBox2.Text = "";
+            this.richTextBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.richTextBox2_KeyPress);
             // 
             // label3
             // 

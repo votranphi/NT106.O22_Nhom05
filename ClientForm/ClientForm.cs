@@ -84,6 +84,21 @@ namespace ClientForm
             }
         }
 
+        private void richTextBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            try
+            {
+                if (e.KeyChar == 13)
+                {
+                    sendBtn_Click(sender, e);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         private void UpdateChatHistoryThreadSafe(string text)
         {
             if (richTextBox1.InvokeRequired)
